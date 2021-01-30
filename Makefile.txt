@@ -1,9 +1,0 @@
-obj-m += Hello.o
-
-KDIR= /usr/src/linux-headers-5.4.0-42-generic
-
-all:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
-
-clean:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean
